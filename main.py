@@ -16,6 +16,7 @@ label = Label(window, font=text_font, bg=background, fg=foreground, bd=border_wi
 label.grid(row=0, column=0)
 
 def digital_clock():
+    #Change below to ("%H:%M:%S") for 24hour clock
     time_live_12 = time.strftime("%I:%M:%S")
     label.config(text=time_live_12)
     label.after(200,digital_clock)
